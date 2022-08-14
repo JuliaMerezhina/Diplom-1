@@ -29,20 +29,20 @@ public class BurgerTest {
     }
 
     @Test
-    public void BurgerAddIngredient() {
+    public void burgerAddIngredient() {
         burger.addIngredient(ingredient);
         assertNotNull("error: failed to add ingredient", burger.ingredients);
     }
 
     @Test
-    public void BurgerRemovedIngredient() {
+    public void burgerRemovedIngredient() {
         burger.addIngredient(ingredient);
         burger.removeIngredient(0);
         assertTrue("error: failed to remove ingredient", burger.ingredients.isEmpty());
     }
 
     @Test
-    public void BurgerMoveIngredient() {
+    public void burgerMoveIngredient() {
         burger.addIngredient(ingredient);
         burger.addIngredient(testIngredient);
         burger.moveIngredient(0, 1);
@@ -50,7 +50,7 @@ public class BurgerTest {
     }
 
     @Test
-    public void BurgerGetPrice() {
+    public void burgerGetPrice() {
         burger.setBuns(newBun);
         burger.addIngredient(testIngredient);
         Float actualPrice = burger.getPrice();
@@ -59,7 +59,7 @@ public class BurgerTest {
     }
 
     @Test
-    public void BurgerGetReceipt() {
+    public void burgerGetReceipt() {
         burger.setBuns(newBun);
         //Добавить ингредиент
         burger.addIngredient(testIngredient);

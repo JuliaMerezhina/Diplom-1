@@ -28,14 +28,14 @@ public class BunTest {
 
 
     @Test
-    public void GetNameCheckUp() {
+    public void getNameCheckUp() {
         Bun bun = new Bun(name, price);
         String actualName = bun.getName();
         assertEquals(name, actualName);
     }
 
     @Test
-    public void GetPriceCheckUp() {
+    public void getPriceCheckUp() {
         Bun bun = new Bun(name, price);
         float actualPrice = bun.getPrice();
         assertEquals(price, actualPrice, 0);
